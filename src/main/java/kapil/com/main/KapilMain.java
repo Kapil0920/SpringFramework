@@ -12,6 +12,12 @@ public class KapilMain {
 		
 		Employee e = ioc.getBean(Employee.class, "emp");
 		System.out.println(e);
+		
+		
+		
+		
+		
 	}
 
 }
+ 
