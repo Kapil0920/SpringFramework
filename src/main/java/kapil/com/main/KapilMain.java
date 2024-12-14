@@ -10,8 +10,13 @@ public class KapilMain {
 	public static void main(String[] args) {
 		ApplicationContext ioc = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		Employee e = ioc.getBean(Employee.class, "emp");
+		Employee e = (Employee)ioc.getBean("emp");
+		
+		
+		Employee e2 = (Employee)ioc.getBean("emp2");
 		System.out.println(e);
+		System.out.println(e2);
+		
 		
 		
 		
