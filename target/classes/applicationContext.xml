@@ -1,1 +1,93 @@
-Helo
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- <bean/> definitions here -->
+
+
+	<bean name="emp" class="kapil.com.entity.Employee">
+
+
+		<property name="name" value="Kapil"></property>
+		<property name="gender" value="Male"></property>
+		<property name="id" value="1"></property>
+		<property name="salary" value="5000"></property>
+		<property name="list">
+
+			<list>
+				<value>101</value>
+				<value>201</value>
+				<value>301</value>
+				<value>301</value>
+			</list>
+		</property>
+
+		<property name="set">
+			<set>
+				<value>1001</value>
+				<value>2001</value>
+				<value>3001</value>
+				<value>2001</value>
+			</set>
+
+		</property>
+
+		<property name="map">
+			<map>
+				<entry key="1" value="ONE" />
+				<entry key="2" value="TWO" />
+				<entry key="3" value="THREE" />
+				<entry key="1" value="one" />
+			</map>
+		</property>
+
+
+	</bean>
+
+
+
+
+	<bean id="emp2" class="kapil.com.entity.Employee">
+		<constructor-arg name="name" value="Nitesh"></constructor-arg>
+		<constructor-arg name="gender" value="Male"></constructor-arg>
+		<constructor-arg name="id" value=" 2"></constructor-arg>
+		<constructor-arg name="salary" value="3000"></constructor-arg>
+		<constructor-arg name="list">
+			<list>
+				<value>123</value>
+				<value>456</value>
+				<value>789</value>
+				<value>123</value>
+			</list>
+		</constructor-arg>
+
+		<constructor-arg name="set">
+			<set>
+				<value>147</value>
+				<value>258</value>
+				<value>369</value>
+				<value>147</value>
+			</set>
+		</constructor-arg>
+
+
+		<constructor-arg name="map">
+			<map>
+				<entry key="1" value="Orange"></entry>
+				<entry key="2" value="Apple"></entry>
+				<entry key="3" value="Guava"></entry>
+				<entry key="2" value="Banana"></entry>
+			</map>
+		</constructor-arg>
+
+	</bean>
+
+
+
+
+
+
+</beans>
